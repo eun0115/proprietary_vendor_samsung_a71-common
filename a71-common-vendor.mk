@@ -7,9 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/bin/lpm:$(TARGET_COPY_OUT_SYSTEM)/bin/lpm \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFacePreProcessing.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacePreProcessing.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libFacialStickerEngine.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacialStickerEngine.arcsoft.so \
     vendor/samsung/a71-common/proprietary/lib64/libmaet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmaet.so \
     vendor/samsung/a71-common/proprietary/lib64/libsxqk_skia.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsxqk_skia.so \
     vendor/samsung/a71-common/proprietary/system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
@@ -22,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/samsung/a71-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/samsung/a71-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
-    vendor/samsung/a71-common/proprietary/vendor/bin/factory.ssc:$(TARGET_COPY_OUT_VENDOR)/bin/factory.ssc \
     vendor/samsung/a71-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
     vendor/samsung/a71-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/samsung/a71-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
@@ -60,249 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/samsung/a71-common/proprietary/vendor/etc/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
     vendor/samsung/a71-common/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ARO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BKD/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BNG/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/BVO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CHO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/COO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/CTI/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/EON/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/GTO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/INS/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/MXO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NBP/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/NPL/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PEO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/PSN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLI/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/SLK/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/TPA/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UFN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UPO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/UYO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTA/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTM/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZTR/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/workspaceFile.qwsp \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Bluetooth_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Codec_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/General_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Global_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Handset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Hdmi_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Headset_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Speaker_cal.acdb \
-    vendor/samsung/a71-common/proprietary/vendor/etc/audconf/ZVV/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/workspaceFile.qwsp \
     vendor/samsung/a71-common/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/samsung/a71-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/samsung/a71-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
@@ -347,40 +100,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/a71-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/a71-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/default_sensors.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_2.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_mst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_mst_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_mst_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_mst_2.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_icm4x6xx_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_icm4x6xx_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_icm4x6xx_4.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_power_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_stk3a6x_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_stk3x3x_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_tcs3407_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_tcs3407_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sdmmagpie_vcnl36811_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_vcnl36811_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_hw_revision.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_hw_revision.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a6x_0.json \
-    vendor/samsung/a71-common/proprietary/vendor/etc/sensors/config/vcnl36811_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/vcnl36811_0.json \
     vendor/samsung/a71-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/samsung/a71-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/samsung/a71-common/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
@@ -402,80 +121,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
     vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.qti.eeprom.n24s64b_imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.n24s64b_imx616.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035_macro.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensor.hi1336.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.hi1336.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensor.imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.imx616.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensor.imx682.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.imx682.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensor.s5kgw1s.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.s5kgw1s.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.2_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.2_hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.8_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.8_sony_imx616_full.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5kgw1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5kgw1s.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depth.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv3.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.aec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.bayercheck.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.bayercheck.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.bayerfuse.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.bayerfuse.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.remosaic.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_capture.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_preview.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_recording.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_vdis.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.aec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.af.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.awb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.pdlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/libMOTION.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libMOTION.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libdepthmapwrapper.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libmmcamera_cac3.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/f_dual_calibration.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/uw_dual_calibration.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/w_dual_calibration.bin \
     vendor/samsung/a71-common/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
@@ -488,8 +133,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/audio.a2dpsink.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.a2dpsink.default.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/audio.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sm6150.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/audio.sec_primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.sec_primary.default.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/hw/com.samsung.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.samsung.chi.override.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
@@ -500,18 +143,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libBeauty_v4.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDualCamBokehCapture.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libHprFace_GAE_api.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHprFace_GAE_api.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libLocalTM_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLocalTM_capture_core.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libLocalTM_wrapper.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLocalTM_wrapper.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeg4SwEncoder.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
@@ -529,7 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCv.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
@@ -559,21 +195,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libbluetooth_a2dpsink_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_a2dpsink_session.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov8.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw_remote_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libchiss3alogdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchiss3alogdebug.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp.so \
@@ -590,11 +217,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libdualcam_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom_control.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libdualcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcapture.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
@@ -617,13 +239,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libjpegQtable_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegQtable_interface.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/liblivefocus_capture_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblivefocus_capture_engine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/liblivefocus_capture_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblivefocus_capture_interface.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/liblivefocus_preview_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblivefocus_preview_engine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/liblivefocus_preview_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblivefocus_preview_interface.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libllhdr_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllhdr_interface.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
@@ -632,13 +248,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblow_light_hdr.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
@@ -653,7 +267,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_file_agent.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libqcodec2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libqcwrappercommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcwrappercommon.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
@@ -694,12 +307,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemnativecarrierfeature.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmartfocus_interface.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libsmartfocusengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmartfocusengine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libsnap_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnap_vndk.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
@@ -709,17 +317,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libswldc_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswldc_capture_core.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libvdis_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvdis_core.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/libvdis_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvdis_interface.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
@@ -744,8 +347,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudioeffectoffload.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiosaplus_sec.so \
@@ -775,7 +376,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@4.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cvp@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.1.so \
@@ -799,64 +399,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.bridge@2.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.1.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.qti.eeprom.n24s64b_imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.n24s64b_imx616.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035_macro.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensor.hi1336.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.hi1336.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensor.imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.imx616.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensor.imx682.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.imx682.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensor.s5kgw1s.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5kgw1s.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_sony_imx616_full.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.bayercheck.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.bayercheck.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.bayerfuse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.bayerfuse.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.remosaic.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.aec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.af.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.awb.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.pdlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libmmcamera_cac3.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
@@ -869,8 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/audio.a2dpsink.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.a2dpsink.default.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/audio.sec_primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.sec_primary.default.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/hw/com.samsung.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.samsung.chi.override.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/gatekeeper.mdfpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.mdfpp.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
@@ -882,20 +422,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBeauty_v4.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libDLInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDLInterface.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDualCamBokehCapture.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libHprFace_GAE_api.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHprFace_GAE_api.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libLocalTM_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_capture_core.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libLocalTM_preview_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_preview_core.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libLocalTM_wrapper.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_wrapper.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeg4SwEncoder.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
@@ -912,9 +444,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVpp.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCv.camera.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
@@ -938,21 +468,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libchiss3alogdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchiss3alogdebug.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
@@ -966,10 +487,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libdualcam_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libdualcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcapture.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode_client.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
@@ -984,28 +501,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libhal.wsm.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhal.wsm.samsung.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libhigh_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range_bokeh.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libjpegQtable_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegQtable_interface.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/liblivefocus_capture_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_capture_engine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/liblivefocus_capture_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_capture_interface.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/liblivefocus_preview_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_preview_engine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/liblivefocus_preview_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_preview_interface.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
@@ -1014,7 +522,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblow_light_hdr.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
@@ -1022,7 +529,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
@@ -1039,7 +545,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqcodec2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libqcwrappercommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcwrappercommon.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
@@ -1057,8 +562,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/librilqmiservices-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices-ext.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
@@ -1084,15 +587,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmartfocus_interface.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsmartfocusengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmartfocusengine.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsnap_v1.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnap_v1.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsnap_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnap_vndk.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libsnpe_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_wrapper.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
@@ -1102,17 +597,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libswldc_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswldc_capture_core.camera.samsung.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libvdis_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdis_core.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/libvdis_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdis_interface.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkmanager_vendor.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
@@ -1120,8 +610,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiosaplus_sec.so \
@@ -1153,7 +641,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.0.so \
     vendor/samsung/a71-common/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.1.so \

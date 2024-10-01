@@ -321,7 +321,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.gnss@2.0 \
     com.qualcomm.qti.ant@1.0 \
-    audio.primary.sm6150 \
+    audio.primary.sm6150-samsung \
     libOmxDsdDec \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \

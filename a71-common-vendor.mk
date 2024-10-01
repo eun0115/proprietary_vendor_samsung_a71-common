@@ -251,7 +251,6 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsemnativecarrierfeature \
     libsensorlistener \
-    libsensorndkbridge \
     libsensorslog \
     libsns_device_mode_stub \
     libsns_fastRPC_util \

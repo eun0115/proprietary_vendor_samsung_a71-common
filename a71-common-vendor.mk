@@ -87,7 +87,6 @@ PRODUCT_PACKAGES += \
     audio.a2dpsink.default \
     audio.sec_primary.default \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.samsung.hardware.audio@1.0-impl \
     vendor.samsung.hardware.bluetooth.a2dp@1.0-impl \
@@ -113,8 +112,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcDec \
     libOmxG711Dec \
     libOmxQcelp13Dec \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
     libOmxVpp \
     libOmxWmaDec \
     libOpenCL \
@@ -138,9 +135,11 @@ PRODUCT_PACKAGES += \
     libaudioconfigstore \
     libaudioparsers \
     libbatching \
+    libbeautyshot.arcsoft \
     libbluetooth_a2dpsink_session \
     libbluetooth_audio_session_qti \
     libc2d30_bltlib \
+    libcacertclient \
     libcapiv2svacnn \
     libcapiv2vop \
     libcdfw \
@@ -148,6 +147,7 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libconfigdb \
+    libcpion \
     libcvp \
     libcvp_common \
     libcvp_stub \
@@ -195,14 +195,17 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libmmosal_vendor \
+    libmpbase \
     libnetmgr \
     libnetmgr_common \
-    libnetutils \
     libnpu \
     liboemcrypto \
     libops \
+    libpadm \
     libpdmapper \
     libpdnotifier \
+    libperfconfig \
+    libperfgluelayer \
     libperipheral_client \
     libprofileparamstorage \
     libpvr \
@@ -223,9 +226,11 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqseed3 \
     libqsocket \
+    libqti-util \
     libqtigef \
     librmnetctl \
     librpmb \
+    libsavscmn \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -239,24 +244,26 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
-    libsec_semRil \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecnativefeature \
-    libsecril-client \
     libsecureui \
     libsecureui_svcsock \
     libsemnativecarrierfeature \
+    libsensorlistener \
+    libsensorndkbridge \
     libsensorslog \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
     libsns_registry_skel \
     libsnsapi \
+    libsnsdiaglog \
+    libspatializerparamstorage \
+    libspeakercalibration \
     libssc \
     libssc_default_listener \
     libssd \
-    libswvdec \
     libsynergy_loc_api \
     libsysmon_cdsp_skel \
     libthermalclient \
@@ -266,8 +273,7 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvpplibrary \
     libxml \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
+    sensors.ssc \
     libasphere \
     libaudioeffectoffload \
     libaudiosaplus_sec \
@@ -296,13 +302,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0 \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.connection@1.0 \
     vendor.qti.hardware.data.connection@1.1 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0 \
@@ -310,7 +316,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.voiceprint@1.0 \
     vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
@@ -323,9 +328,9 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     libadm \
+    libarcsoft_stereodistancemeasure \
     libaudio_log_utils \
     libaudio_soundtrigger \
-    libcpion \
     libdrc \
     libdsd2pcm \
     libfastcrc \
@@ -341,6 +346,7 @@ PRODUCT_PACKAGES += \
     libSemDataProps \
     libSemTelephonyProps \
     libbtnv \
+    libc++_shared \
     libengmode_client \
     libhexagon_nn_stub \
     libhta \
@@ -357,7 +363,6 @@ PRODUCT_PACKAGES += \
     libril_sem \
     libsec-ril \
     libskeymaster4device \
-    libsnsdiaglog \
     libvkmanager_vendor \
     unnhal-acc-adreno \
     unnhal-acc-common \
@@ -367,9 +372,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.bridge@2.0 \
     vendor.samsung.hardware.radio.bridge@2.1 \
     vendor.samsung.hardware.radio.channel@2.0 \
-    vendor.samsung.hardware.radio@2.0 \
-    vendor.samsung.hardware.radio@2.1 \
-    vendor.samsung.hardware.radio@2.2 \
     vendor.samsung.hardware.thermal@1.0 \
     capi_v2_aptX_CLHDAD_Encoder \
     libVC1Dec \
@@ -387,16 +389,8 @@ PRODUCT_PACKAGES += \
     libscveT2T_skel \
     libsnpe_dsp_v65_domains_v2_skel \
     libsnpe_dsp_v66_domains_v2_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    fm_helium \
-    libfm-hci \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.qdutils_disp@1.0 \
-    vendor.qti.voiceprint@1.0 \
     TimeService \
     audiosphere \
-    vendor.qti.voiceprint-V1.0-java \
     android.hardware.gnss@2.1-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.clearkey.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \

@@ -5221,14 +5221,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "audio.primary.sm6150-samsung",
+	name: "audio.primary.qcom",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio.primary.sm6150-samsung.so"],
+			srcs: ["proprietary/vendor/lib/hw/audio.primary.qcom.so"],
 			shared_libs: ["libbase", "liblog", "libcutils", "libtinyalsa", "libtinycompress", "libaudioroute", "libaudioutils", "libexpat", "libhidlbase", "libprocessgroup", "libutils", "libsecaudioinfo", "libaudio_soundtrigger", "libsamsungVoipResampler", "librecordalive", "libaudio_log_utils", "vendor.qti.hardware.audiohalext@1.0", "android.hardware.power@1.2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},

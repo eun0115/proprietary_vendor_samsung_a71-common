@@ -5473,7 +5473,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils-v30", "android.hardware.health@2.1", "android.hardware.health@2.0", "vendor.samsung.hardware.health@2.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils-v30", "android.hardware.health@2.1", "android.hardware.health@2.0", "vendor.samsung.hardware.health@2.0", "vendor.samsung.hardware.thermal@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

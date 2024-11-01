@@ -23,7 +23,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/libmaet.so"],
+			srcs: ["proprietary/system/lib64/libmaet.so"],
 			shared_libs: ["libsxqk_skia", "libc", "libm", "liblog", "libstdc++", "libdl", ],
 		},
 	},
@@ -39,7 +39,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/libsxqk_skia.so"],
+			srcs: ["proprietary/system/lib64/libsxqk_skia.so"],
 			shared_libs: ["libc", "libm", "liblog", "libstdc++", "libdl", ],
 		},
 	},
@@ -8397,13 +8397,6 @@ android_app_import {
 	soc_specific: true,
 }
 
-dex_import {
-	name: "audiosphere",
-	owner: "samsung",
-	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
-	system_ext_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti.xml",
 	owner: "samsung",
@@ -8436,7 +8429,7 @@ cc_prebuilt_binary {
 	owner: "samsung",
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/bin/lpm"],
+			srcs: ["proprietary/system/bin/lpm"],
 			shared_libs: ["libcutils", "libbinder", "libutils", "libsuspend", "libhardware", "libandroid", "libmaet", "libsxqk_skia", "liblog", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},

@@ -523,7 +523,6 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_v65_domains_v2_skel \
     libsnpe_dsp_v66_domains_v2_skel \
     TimeService \
-    audiosphere \
     android.hardware.gnss@2.1-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.clearkey.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \

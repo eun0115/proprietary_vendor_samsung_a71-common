@@ -428,7 +428,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.camera.device@1.0_vendor \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.connection@1.0 \
     vendor.qti.hardware.data.connection@1.1 \

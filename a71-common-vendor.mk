@@ -347,7 +347,6 @@ PRODUCT_PACKAGES += \
     libqsocket \
     libqti-util \
     libqtigef \
-    librmnetctl \
     librpmb \
     libsavscmn \
     libscveCommon \

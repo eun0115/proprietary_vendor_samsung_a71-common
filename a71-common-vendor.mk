@@ -87,84 +87,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a71-common/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
-    vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.2_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.2_hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.8_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.8_sony_imx616_full.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5kgw1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5kgw1s.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/f_dual_calibration.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/uw_dual_calibration.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/w_dual_calibration.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_sony_imx616_full.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/a71-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx682.bin
+    vendor/samsung/a71-common/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin
 
 PRODUCT_PACKAGES += \
     libmaet \
     libsxqk_skia \
-    com.qti.eeprom.n24s64b_imx616 \
-    com.samsung.sensor.gc5035 \
-    com.samsung.sensor.gc5035_macro \
-    com.samsung.sensor.hi1336 \
-    com.samsung.sensor.imx616 \
-    com.samsung.sensor.imx682 \
-    com.samsung.sensor.s5kgw1s \
-    com.qti.camx.chiiqutils \
-    com.qti.eisv2 \
-    com.qti.eisv3 \
-    com.qti.node.depth \
-    com.qti.node.dummyrtb \
-    com.qti.node.dummysat \
-    com.qti.node.eisv2 \
-    com.qti.node.eisv3 \
-    com.qti.node.fcv \
-    com.qti.node.gpu \
-    com.qti.node.memcpy \
-    com.qti.node.stich \
-    com.qti.node.swregistration \
-    com.qti.stats.afd \
-    com.qti.stats.asd \
-    com.qti.stats.hafoverride \
-    com.qti.stats.pdlibsony \
-    com.qti.stats.pdlibwrapper \
-    com.qtistatic.stats.aec \
-    com.qtistatic.stats.af \
-    com.qtistatic.stats.awb \
-    com.qtistatic.stats.pdlib \
-    com.samsung.node.bayercheck \
-    com.samsung.node.bayerfuse \
-    com.samsung.node.capture_bokeh \
-    com.samsung.node.capture_fusion \
-    com.samsung.node.realtimebokeh \
-    com.samsung.node.remosaic \
-    com.samsung.node.smooth_transition \
-    com.wrapper.stats.aec \
-    com.wrapper.stats.af \
-    com.wrapper.stats.awb \
-    com.wrapper.stats.pdlib \
-    libdepthmapwrapper \
-    libmmcamera_cac3 \
     com.qualcomm.qti.ant@1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -191,7 +118,6 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libCB \
     libDualCamBokehCapture.camera.samsung \
-    libFacePreProcessing.camera.samsung \
     libFlacSwDec \
     libGPTEE_vendor \
     libGPreqcancel \
@@ -447,16 +373,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.gnss@2.0 \
-    com.qti.stats.aec \
-    com.qti.stats.af \
-    com.qti.stats.awb \
-    com.qti.stats.haf \
-    com.qti.stats.pdlib \
-    com.samsung.node.uniplugin_capture \
-    com.samsung.node.uniplugin_preview \
-    com.samsung.node.uniplugin_recording \
-    com.samsung.node.uniplugin_vdis \
-    libMOTION \
     audio.primary.qcom \
     libOmxDsdDec \
     lib_SamsungRec_07010 \
@@ -481,7 +397,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.audiohalext@1.0 \
     gatekeeper.mdfpp \
     libDLInterface.camera.samsung \
-    libFacialStickerEngine.arcsoft \
     libLocalTM_preview_core \
     libSNPE \
     libSemDataProps \

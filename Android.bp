@@ -10822,6 +10822,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsensorlistener.so",
             ],
             shared_libs: [
+                "libshim_sensorndkbridge",
                 "libcutils",
                 "libutils",
                 "libsensorndkbridge",
@@ -10835,7 +10836,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }

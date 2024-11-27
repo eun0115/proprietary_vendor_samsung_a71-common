@@ -451,6 +451,7 @@ PRODUCT_PACKAGES += \
     libscveT2T_skel \
     libsnpe_dsp_v65_domains_v2_skel \
     libsnpe_dsp_v66_domains_v2_skel \
+    CACertService \
     TimeService \
     audiosphere \
     android.hardware.gnss@2.1-service-qti.xml \

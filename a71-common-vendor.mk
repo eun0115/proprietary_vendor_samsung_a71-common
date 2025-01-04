@@ -454,7 +454,6 @@ PRODUCT_PACKAGES += \
     lpm \
     adpl \
     adsprpcd \
-    audioflacapp \
     cdsprpcd \
     cnss-daemon \
     dspservice \

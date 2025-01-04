@@ -112,13 +112,10 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
     vulkan.adreno \
-    libAlacSwDec \
-    libApeSwDec \
     libBeauty_v4.camera.samsung \
     libC2D2 \
     libCB \
     libDualCamBokehCapture.camera.samsung \
-    libFlacSwDec \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
@@ -126,14 +123,11 @@ PRODUCT_PACKAGES += \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
     libLocalTM_wrapper.camera.samsung \
-    libMpeg4SwEncoder \
     libOmxAacDec \
     libOmxAlacDec \
-    libOmxAlacDecSw \
     libOmxAmrDec \
     libOmxAmrwbplusDec \
     libOmxApeDec \
-    libOmxApeDecSw \
     libOmxEvrcDec \
     libOmxG711Dec \
     libOmxQcelp13Dec \

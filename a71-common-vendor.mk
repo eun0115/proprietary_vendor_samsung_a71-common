@@ -121,16 +121,6 @@ PRODUCT_PACKAGES += \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
     libLocalTM_wrapper.camera.samsung \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libOpenCv.camera.samsung \
     libQSEEComAPI \
@@ -366,7 +356,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.gnss@2.0 \
     audio.primary.qcom \
-    libOmxDsdDec \
+    libOmxVpp \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
@@ -375,7 +365,6 @@ PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libaudio_soundtrigger \
     libdrc \
-    libdsd2pcm \
     libdualcam_refocus_video \
     libfastcrc \
     liblivefocus_preview_engine \
